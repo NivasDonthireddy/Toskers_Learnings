@@ -31,11 +31,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GridControl_Toskers", "Grid
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Textbox-Watermark_Toskers", "Textbox-Watermark_Toskers\Textbox-Watermark_Toskers.csproj", "{CD4C5ACC-CBD7-4714-A969-020A70BEFC84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomControl_Toskers", "CustomControl_Toskers\CustomControl_Toskers.csproj", "{6606F98B-94AA-4CB6-B261-6D2C92CDD1A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomControl_Toskers", "CustomControl_Toskers\CustomControl_Toskers.csproj", "{6606F98B-94AA-4CB6-B261-6D2C92CDD1A1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Practise", "Practise", "{86DA93C5-6931-4B1A-966B-B3832F06ADDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Practise", "WPF_Practise\WPF_Practise.csproj", "{FD538085-EB83-4D98-8061-AF51305E2CEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF_Practise", "WPF_Practise\WPF_Practise.csproj", "{FD538085-EB83-4D98-8061-AF51305E2CEB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F96FABB3-BAC4-4039-A43C-F2BE2E61BBE0}"
+	ProjectSection(SolutionItems) = preProject
+		TextFile1.txt = TextFile1.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

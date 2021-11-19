@@ -1,0 +1,71 @@
+﻿<Window x:Class="ComboBox_Toskers.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ComboBox_Toskers"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" d:FontSize="18">
+    
+    <Grid x:Name="grid">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0" >
+            <TextBlock Text="XAML Items" />
+            <ComboBox>
+                <ComboBoxItem>
+                    <TextBlock Text="Item1" />
+                </ComboBoxItem>
+                <ComboBoxItem >
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Item2" />
+                        <Ellipse Width="15" Height="15" Fill="Red" />
+                    </StackPanel>
+                </ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="1" >
+            <TextBlock Text="Names"/>
+            <ComboBox ItemsSource="{Binding NameCollection}"/>
+            <TextBlock Text="Colors"/>
+            <ComboBox ItemsSource="{Binding BrushCollection}"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="0" >
+            <TextBlock Text="Templated Colors" />
+            <ComboBox ItemsSource="{Binding BrushCollection}" >
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal" >
+                            <Ellipse Width="15" Height="15" Fill="{Binding}"/>
+                            <TextBlock Text="{Binding}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+        </StackPanel>
+        <!--<StackPanel Grid.Row="1" Grid.Column="1" >
+            <TextBlock Text="Cursor Styles" />
+            <ComboBox ItemsSource="{Binding NameCollection}" Cursor="Hand">
+                <ComboBox.ItemContainerStyle>
+                    <Style TargetType="ComboBoxItem">
+                        <Setter Property="Cursor" Value="Pen"/>
+                    </Style>
+                </ComboBox.ItemContainerStyle>
+            </ComboBox>
+        </StackPanel>-->
+        <StackPanel Grid.Row="1" Grid.Column="1" >
+            <TextBlock Text="ListBox Items" />
+            <ListBox Selected="ListBox_Selected">
+                <ListBoxItem >Nivas</ListBoxItem>
+                <ListBoxItem >Suran</ListBoxItem>
+                <ListBoxItem>Sujalas</ListBoxItem>
+            </ListBox>
+        </StackPanel>
+    </Grid>
+</Window>

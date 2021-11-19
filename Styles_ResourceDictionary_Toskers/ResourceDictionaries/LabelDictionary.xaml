@@ -1,0 +1,19 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style TargetType="Label" x:Key="TextboxLabel">
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Foreground" Value="Gray" />
+    </Style>
+
+    <Style TargetType="Label" x:Key="TitleLabel">
+        <Setter Property="FontSize" Value="24" />
+        <Setter Property="Foreground" Value="Gray" />
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+    </Style>
+
+    <Style TargetType="TextBox" x:Key="TxtBox">
+        <Setter Property="Margin" Value="0 5 0 5" />
+        <Setter Property="Padding" Value="5" />
+    </Style>
+</ResourceDictionary>

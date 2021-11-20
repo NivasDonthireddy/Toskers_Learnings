@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ComboBox_Toskers"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" d:FontSize="18">
+        Title="MainWindow" Height="350" Width="800" d:FontSize="18">
     
     <Grid x:Name="grid">
         <Grid.RowDefinitions>
